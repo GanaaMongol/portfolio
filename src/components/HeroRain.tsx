@@ -2,9 +2,6 @@
 
 import { GlyphRain } from "@/vendor/canvas-ui/GlyphRain";
 
-// Mongolian Cyrillic + code symbols (spec C-8).
-const CHARSET = "АБВГДЕЁЖЗИЙКЛМНОӨПРСТУҮФХЦЧШЩЪЫЬЭЮЯ{}<>/;=";
-
 // Decorative background layer behind the hero text (spec FR-6, C-8). Text stays in the normal DOM on top,
 // so it is always legible and accessible; the rain fades out towards the text column via a mask.
 // The library handles prefers-reduced-motion and pauses offscreen; without WebGL2 it draws nothing.
@@ -16,10 +13,10 @@ export function HeroRain() {
     >
       <GlyphRain
         className="h-full w-full"
-        charset={CHARSET}
         cell={16}
-        color={[0.83, 0.83, 0.85]}
-        headColor={[0.44, 0.44, 0.48]}
+        // Green rain, library-default Japanese katakana glyphs (spec C-8 change, 2026-11-17).
+        color={[0.55, 0.85, 0.62]}
+        headColor={[0.09, 0.64, 0.29]}
         speed={0.12}
         density={0.12}
         trail={0.8}
