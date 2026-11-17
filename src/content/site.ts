@@ -92,7 +92,7 @@ const content: Record<Lang, SiteContent> = {
     meta: {
       title: "Гандаваа Дугарсүрэн — Tech Lead, Full Stack хөгжүүлэгч",
       description:
-        "10+ жилийн туршлагатай Tech Lead. Вэб платформыг эхнээс нь дуустал зохиож, бүтээж, өргөжүүлдэг; багийн хөгжүүлэлтэд AI нэвтрүүлдэг.",
+        "10+ жилийн туршлагатай технологийн удирдагч. Бизнесийн зорилго, хэрэглэгчийн хэрэгцээнд нийцсэн веб платформыг системийн архитектураас эхлэн хөгжүүлж, найдвартай ажиллагаа болон өргөтгөх боломжийг ханган хэрэгжүүлдэг. Мөн хиймэл оюуныг бүтээгдэхүүн болон програм хангамж хөгжүүлэлтийн мөчлөгт нэвтрүүлж, багийн бүтээмж, инженерчлэлийн чанар, бизнесийн үр ашгийг нэмэгдүүлэхэд чиглэн ажилладаг.",
     },
     nav: { about: "Тухай", projects: "Төслүүд", experience: "Туршлага", contact: "Холбогдох" },
     a11y: {
@@ -104,48 +104,48 @@ const content: Record<Lang, SiteContent> = {
     },
     hero: {
       badge: "Tech Lead & Full Stack хөгжүүлэгч",
-      titleLine1: "Платформ бүтээж,",
-      titleLine2: "AI-г ажилд оруулна.",
+      titleLine1: "Найдвартай платформ бүтээж,",
+      titleLine2: "AI-г бодит үр дүнд хүргэнэ.",
       introBefore: "Сайн байна уу, би ",
       name: "Гандаваа Дугарсүрэн",
       introAfter:
-        ". 10 гаруй жил вэб систем зохиож, бүтээж, өргөжүүлж ирсэн; одоо багийн програм хангамж хөгжүүлэлтэд AI-г аюулгүй, хэмжигдэхүйц үр дүнтэй нэвтрүүлж байна.",
+        ". Веб системийн архитектур, хөгжүүлэлт, өргөтгөл дээр 10 гаруй жил ажилласан туршлагатай. Өнөөдөр багийн програм хангамж хөгжүүлэлтийн үйл явцад хиймэл оюуныг аюулгүй, хяналттай, хэмжигдэхүйц үр дүнтэйгээр нэвтрүүлж байна.",
       cta: "Төслүүдийг үзэх",
       secondaryCta: "Холбогдох",
     },
     about: {
-      heading: "Тухай",
+      heading: "Миний тухай",
       body: [
-        "Node.js / NestJS, React, Vue.js болон AWS дээр суурилсан вэб системийг 10 гаруй жил хөгжүүлсэн Full Stack хөгжүүлэгч. Өдөр бүр 500 гаруй инженер ашигладаг нисэхийн платформоос эхлээд KFC, Pizza Hut-ийн өндөр ачаалалтай захиалгын систем хүртэл байгууллагын түвшний шийдлүүдийг хүлээлгэн өгсөн.",
-        "Одоо Tavanbogd Nura ХХК-д Tech Lead-ээр ажиллаж, AI агент болон AI-д суурилсан хөгжүүлэлтийн процесс (AI SDLC)-ийг группийн хэмжээнд нэвтрүүлж байна. Багийг удирдаж, залуу хөгжүүлэгчдэд зөвлөдөг; Удирдлагын магистр (2024).",
+        "Node.js / NestJS, React, Vue.js болон AWS технологид суурилсан веб системийн архитектур, хөгжүүлэлт, ашиглалтад нэвтрүүлэлтийн чиглэлээр 10 гаруй жилийн туршлагатай Full Stack инженер. Өдөр тутам 500 гаруй инженер, мэргэжилтэн ашигладаг нисэхийн үйл ажиллагааны платформоос эхлээд KFC, Pizza Hut-ийн захиалга, хүргэлтийн өндөр ачаалалтай систем хүртэл байгууллагын түвшний шийдлүүдийг боловсруулж, үйлдвэрлэлийн орчинд нэвтрүүлсэн.",
+        "Одоогоор Tavanbogd Nura ХХК-д Tech Lead-ийн үүрэг гүйцэтгэж, AI агент болон хиймэл оюунд суурилсан програм хангамж хөгжүүлэлтийн мөчлөгийг (AI SDLC) группийн хэмжээнд нэвтрүүлэх ажлыг удирдаж байна. Техникийн шийдвэр гаргалт, багийн хөгжүүлэлт, инженерүүдийн мэргэжлийн өсөлтөд манлайлан оролцдог. Удирдлагын магистрын зэрэгтэй (2024).",
       ],
-      servicesHeading: "Юугаар хамтран ажиллах вэ",
+      servicesHeading: "Үйлчилгээний чиглэлүүд",
       services: [
         {
           title: "AI SDLC нэвтрүүлэлт",
           description:
-            "AI coding агент, хэрэгслийг үнэлж, шаардлага, дизайн, код, review, тест, баримтжуулалтын шат бүрт AI-тай ажлын урсгал, багийн дүрэм, хамгаалалтыг нэвтрүүлнэ.",
+            "AI кодчиллын агент болон инженерчлэлийн хэрэгслүүдийг үнэлж сонгоно. Шаардлага тодорхойлохоос эхлээд архитектур, хөгжүүлэлт, кодын хяналт, тест, баримтжуулалт хүртэлх үе шатанд AI-д суурилсан ажлын урсгал, багийн стандарт, аюулгүй ажиллагааны хяналтыг нэвтрүүлнэ.",
         },
         {
           title: "AI агент ба өгөгдөл",
           description:
-            "Байгууллагын өгөгдөл дээр ажилладаг, эрх нь хязгаарлагдсан AI агент; хариултын тоо бүрийг шалгадаг eval, AWS Bedrock.",
+            "Байгууллагын өгөгдөлтэй аюулгүй харилцах, хамгийн бага шаардлагатай эрхийн зарчмаар ажиллах AI агентуудыг хөгжүүлнэ. Хариултын үнэн зөв байдал, тоон мэдээллийн нийцэл, аюулгүй байдлыг үнэлэх тестийн хүрээг AWS Bedrock зэрэг технологид тулгуурлан хэрэгжүүлнэ.",
         },
         {
           title: "Full stack платформ",
           description:
-            "Олон түрээслэгчтэй SaaS, вэб ба мобайл, төлбөр, POS интеграцчлал, AWS дээрх CI/CD — архитектураас production хүртэл.",
+            "Олон байгууллага, хэрэглэгчийг тусгаарлан дэмжих SaaS платформ, веб болон мобайл аппликейшн, төлбөрийн систем, POS интеграцчлалыг архитектураас эхлэн хөгжүүлж, AWS орчинд CI/CD бүхий үйлдвэрлэлийн бэлэн шийдэл болгон нэвтрүүлнэ.",
         },
         {
           title: "Хуучин системийг шинэчлэх",
           description:
-            "Ажиллаж буй системийг зогсоолгүй шинэчилнэ: Vue 2 → React + TypeScript, PHP → NestJS, monolith → сервисүүд, тестийг тэгээс нэвтрүүлнэ.",
+            "Үйл ажиллагаанд байгаа системийн тасралтгүй ажиллагааг хадгалан технологийн шинэчлэл хийнэ. Vue 2-оос React + TypeScript, PHP-ээс NestJS рүү шилжүүлэх, монолит архитектурыг бие даасан сервисүүдэд задлах, автомат тест болон чанарын хяналтыг нэвтрүүлэх ажлыг хэрэгжүүлнэ.",
         },
       ],
     },
     projects: {
       heading: "Онцлох төслүүд",
-      intro: "Нарийн төвөгтэй асуудлыг шийдэж, хэмжигдэх үр дүн гаргасан ажлууд.",
+      intro: "Бизнесийн бодит асуудлыг инженерчлэлийн шийдлээр шийдвэрлэж, хэмжигдэхүйц үр дүн бий болгосон төслүүд.",
       visit: "Сайт үзэх",
       items: [
         {
@@ -153,9 +153,9 @@ const content: Record<Lang, SiteContent> = {
           client: "Таван Богд Групп",
           year: "2026",
           summary:
-            "Odoo 19 болон ирцийн өгөгдөл дээр ажилладаг HR самбар, монгол хэлтэй AI чат агентыг Claude Code ашиглан ганцаараа бүтээсэн. Аюулгүй, зөвхөн уншдаг нэг өгөгдлийн давхаргаас тэжээгддэг.",
+            "Odoo 19 болон ажилтнуудын ирцийн мэдээлэлтэй холбогдсон хүний нөөцийн аналитик самбар, монгол хэлээр харилцах AI агентыг Claude Code-ийн тусламжтайгаар бие даан архитектурчилж, хөгжүүлсэн. Хоёр шийдэл нь нэгдсэн, зөвхөн унших эрхтэй, аюулгүй өгөгдлийн давхаргаар дамжин мэдээлэл авдаг.",
           result:
-            "Тоо бүрийг шалгадаг eval-д Bedrock Sonnet 15/15 давсан (локал загвар 9/15-аар хасагдсан); аюулгүй байдлын тест 15/15.",
+            "Тоон мэдээллийн үнэн зөв байдлыг шалгах үнэлгээнд Bedrock Sonnet 15/15 оноо авч, локал загвар 9/15 оноогоор шаардлага хангаагүй. Аюулгүй байдлын тестийн 15/15 шалгуурыг амжилттай хангасан.",
           tags: tags.hrAgent,
           href: null,
         },
@@ -164,9 +164,9 @@ const content: Record<Lang, SiteContent> = {
           client: "KFC Mongolia",
           year: "2026",
           summary:
-            "Дэмжлэг нь дууссан, тестгүй Vue 2 аппыг аудитлаад React 18 + TypeScript дээр ганцаараа дахин бүтээсэн: 7 backend сервистэй интеграцчлагдсан, ~14,300 мөр TypeScript.",
+            "Дэмжлэгийн хугацаа дууссан, автомат тестгүй Vue 2 аппликейшнд техникийн аудит хийж, React 18 болон TypeScript ашиглан шинэ архитектураар бие даан дахин хөгжүүлсэн. Шинэ аппликейшн нь backend-ийн 7 сервисийн интеграцчлалтай бөгөөд ойролцоогоор 14,300 мөр TypeScript кодоос бүрдэнэ.",
           result:
-            "Session дуусахад захиалга алдагдах асуудлыг бүрэн арилгасан; тестийг тэгээс нэвтрүүлсэн (17 тест файл).",
+            "Хэрэглэгчийн session дуусах үед захиалга бүртгэгдэхгүй болох эрсдэлийг арилгаж, автомат тестийн суурийг шинээр бүрдүүлэн 17 тест файл нэвтрүүлсэн.",
           tags: tags.kfcCallCenter,
           href: null,
         },
@@ -175,8 +175,8 @@ const content: Record<Lang, SiteContent> = {
           client: "TBG Tech ХХК",
           year: "2025 – 2026",
           summary:
-            "AI coding агент, хэрэгслийг судалж үнэлээд програм хангамж хөгжүүлэлтийн бүх шатанд AI-тай ажлын урсгал нэвтрүүлсэн.",
-          result: "Шаардлагаас баримтжуулалт хүртэлх шат бүрт багийн удирдамж, хамгаалалт бий болсон.",
+            "AI кодчиллын агент болон хөгжүүлэлтийн хэрэгслүүдэд харьцуулсан үнэлгээ хийж, програм хангамжийн амьдралын мөчлөгийн үе шат бүрд AI-д суурилсан ажлын урсгалыг төлөвлөн нэвтрүүлсэн.",
+          result: "Шаардлага тодорхойлох, дизайн, кодчилол, хяналт, тест, баримтжуулалтын үе шат бүрд ашиглах багийн стандарт, ажлын заавар болон аюулгүй ажиллагааны хяналтыг боловсруулсан.",
           tags: tags.aiSdlc,
           href: null,
         },
@@ -185,8 +185,8 @@ const content: Record<Lang, SiteContent> = {
           client: "Таван Богд Групп",
           year: "2022 – 2023",
           summary:
-            "Имэйл, чат, утсаар тархсан IT хүсэлтийг орлох дотоод helpdesk-ийг эхнээс нь зохиож, хөгжүүлэлтийг удирдсан: автомат хуваарилалт, SLA сэрэмжлүүлэг, Odoo SSO.",
-          result: "Сард 1,500–2,000 тасалбар; шийдвэрлэх хугацаа ~3 цагаас ~1 цаг болж, сард ~160 хүн-цаг хэмнэсэн.",
+            "Имэйл, чат, утсаар хүлээн авдаг байсан IT хүсэлтийг нэгтгэх байгууллагын дотоод Helpdesk платформын архитектур, хөгжүүлэлтийг удирдсан. Хүсэлтийн автомат хуваарилалт, SLA мэдэгдэл болон Odoo SSO интеграцчлалыг хэрэгжүүлсэн.",
+          result: "Сард 1,500–2,000 хүсэлт боловсруулдаг системийг нэвтрүүлснээр хүсэлт шийдвэрлэх дундаж хугацааг ойролцоогоор 3 цагаас 1 цаг болгон бууруулж, сар бүр 160 орчим хүн-цагийн бүтээмжийн хэмнэлт бий болгосон.",
           tags: tags.itsupport,
           href: null,
         },
@@ -195,19 +195,19 @@ const content: Record<Lang, SiteContent> = {
           client: "KFC Mongolia",
           year: "4 жил",
           summary:
-            "2 хүний backend багийн ахлах хөгжүүлэгч: monolith-ийг 7 бие даасан сервис (236 API endpoint) болгон задалж, 8 төлбөрийн үйлчилгээг нэг сервист нэгтгэсэн.",
+            "Хоёр хүний бүрэлдэхүүнтэй backend багийн ахлах хөгжүүлэгчээр ажиллаж, монолит системийг 236 API endpoint бүхий 7 бие даасан сервис болгон дахин зохион байгуулсан. Мөн 8 төлбөрийн үйлчилгээний интеграцчлалыг нэгдсэн сервисээр удирдах архитектур боловсруулсан.",
           result:
-            "Салбарын POS руу илгээсэн захиалга чимээгүй алдагдахаа больсон; төлбөрийг минутын дотор автоматаар баталгаажуулдаг.",
+            "Салбарын POS систем рүү дамжуулсан захиалгын алдагдлыг арилгаж, төлбөрийн төлөвийг хэдхэн минутын дотор автоматаар баталгаажуулах найдвартай механизмыг нэвтрүүлсэн.",
           tags: tags.kfcBackend,
           href: null,
         },
         {
           title: "dagaldagch.mn",
           client: "FaithTech",
-          year: "2025 –",
-          summary: "Сүмүүдэд зориулсан олон түрээслэгчтэй сургалтын платформ (вэб + мобайл)-ыг архитектурлаж, хөгжүүлэлтийг удирдсан.",
+          year: "2025 – одоо",
+          summary: "Сүм, байгууллагуудад зориулсан олон байгууллагын архитектуртай (multi-tenant) шавь бэлтгэх сургалтын платформын веб болон мобайл шийдлийн архитектурыг боловсруулж, хөгжүүлэлтийг удирдсан.",
           result:
-            "Байгууллага бүрийн өгөгдлийг найдвартай тусгаарласан; шинэ хичээлийн төрлийг DB өөрчлөлтгүйгээр нэмдэг сургалтын хөдөлгүүр.",
+            "Байгууллага тус бүрийн өгөгдлийн тусгаарлалтыг хэрэгжүүлж, өгөгдлийн сангийн бүтцэд өөрчлөлт оруулахгүйгээр шинэ төрлийн хичээл нэмэх боломжтой, схемд суурилсан сургалтын хөдөлгүүр хөгжүүлсэн.",
           tags: tags.dagaldagch,
           href: "https://dagaldagch.mn",
         },
@@ -216,8 +216,8 @@ const content: Record<Lang, SiteContent> = {
           client: "vip76",
           year: "2024 – 2026",
           summary:
-            "Ажиллаж буй PHP платформыг унтраалгүйгээр NestJS руу шилжүүлж, хэрэглэгч бүр өөрийн домэйн дээр сайттай болдог multi-tenant платформ болгосон.",
-          result: "Кодын ~75%-ийг бичсэн; query-ийн гүйцэтгэлийг сайжруулж, CDN зураг боловсруулалт, bulk имэйл нэвтрүүлсэн.",
+            "Үйл ажиллагаанд байгаа PHP платформыг тасралтгүй ажиллуулах нөхцөлтэйгөөр NestJS архитектурт үе шаттай шилжүүлж, хэрэглэгч бүр өөрийн домэйнд вебсайт ажиллуулах боломжтой multi-tenant платформ болгон өргөтгөсөн.",
+          result: "Платформын нийт кодын ойролцоогоор 75%-ийг хөгжүүлж, өгөгдлийн сангийн query-ийн гүйцэтгэлийг оновчлон, CDN-д суурилсан зураг боловсруулах урсгал болон бөөнөөр имэйл илгээх боломжийг нэвтрүүлсэн.",
           tags: tags.vip76,
           href: "https://vip76.mn",
         },
@@ -226,8 +226,8 @@ const content: Record<Lang, SiteContent> = {
           client: "Иргэний нисэхийн ерөнхий газар",
           year: "2010 – 2019",
           summary:
-            "Агаарын навигацийн үйл ажиллагааг (нөөц төлөвлөлт, тоног төхөөрөмж, хүний нөөц, сургалт, тайлан) цахимжуулсан 12 модультай платформ.",
-          result: "500+ инженер, техникч, менежер өдөр бүр ашигладаг.",
+            "Агаарын навигацийн үйл ажиллагааны нөөцийн төлөвлөлт, тоног төхөөрөмжийн бүртгэл, хүний нөөц, сургалт, тайлагнал зэрэг үндсэн процессыг цахимжуулсан 12 модультай байгууллагын платформ.",
+          result: "Өдөр тутам 500 гаруй инженер, техникч, удирдах ажилтан үйл ажиллагаандаа ашигладаг.",
           tags: tags.ecns,
           href: null,
         },
@@ -241,8 +241,8 @@ const content: Record<Lang, SiteContent> = {
           role: "Tech Lead",
           org: "Tavanbogd Nura ХХК",
           highlights: [
-            "Группийн бодлого, зохион байгуулалтын процессыг AI-аар автоматжуулах ажлыг удирдаж байна.",
-            "AI агентаар санааг хурдан прототип болгож, архитектурын review, тестээр production-д бэлэн болгодог.",
+            "Группийн хэмжээнд бодлого, байгууллагын үйл ажиллагааны процессыг хиймэл оюунд суурилан автоматжуулах санаачилгыг удирдан хэрэгжүүлж байна.",
+            "AI хөгжүүлэлтийн агент ашиглан бизнесийн санааг богино хугацаанд ажиллах прототип болгон хувиргаж, архитектурын хяналт болон тестээр баталгаажуулан үйлдвэрлэлийн орчинд нэвтрүүлэхэд бэлтгэдэг.",
           ],
         },
         {
@@ -250,8 +250,8 @@ const content: Record<Lang, SiteContent> = {
           role: "Full Stack хөгжүүлэгч",
           org: "Tavanbogd Nura ХХК",
           highlights: [
-            "KFC, Pizza Hut-ийн захиалга, хүргэлт, call center платформын backend, админ самбарыг AWS дээр бүтээсэн.",
-            "Code review удирдаж, кодын стандарт тогтоож, залуу хөгжүүлэгчдэд зөвлөсөн.",
+            "KFC болон Pizza Hut-ийн захиалга, хүргэлт, дуудлагын төвийн платформын backend сервис, удирдлагын самбарыг AWS үүлэн дэд бүтцэд хөгжүүлж, интеграцчилсан.",
+            "Кодын хяналтын (code review) үйл явцыг зохион байгуулж, хөгжүүлэлтийн стандарт тогтоон, багийн гишүүдэд техникийн чиглүүлэг болон менторшип үзүүлсэн.",
           ],
         },
         {
@@ -259,25 +259,25 @@ const content: Record<Lang, SiteContent> = {
           role: "Системийн шинжээч",
           org: "Tavanbogd Solutions ХХК",
           highlights: [
-            "TBG группийн охин компаниудын e-commerce, захиалга, call center интеграцчлалын шаардлага, ажлын урсгалыг боловсруулсан.",
+            "TBG группийн охин компаниудын цахим худалдаа, захиалгын удирдлага болон дуудлагын төвийн системүүдийн бизнесийн шаардлагыг тодорхойлж, систем хоорондын интеграцчлал, ажлын урсгалыг боловсруулсан.",
           ],
         },
         {
           period: "2010 — 2019",
           role: "Технологийн инженер",
           org: "Иргэний нисэхийн ерөнхий газар",
-          highlights: ["ECNS платформыг бүтээж, дотоод IT багийг удирдсан (сургалт, худалдан авалт, технологийн шинэчлэл)."],
+          highlights: ["ECNS платформын хөгжүүлэлтийг хэрэгжүүлж, дотоод IT багийн үйл ажиллагааг удирдан, сургалт, технологийн худалдан авалт болон дэд бүтцийн шинэчлэлийг хариуцсан."],
         },
         {
           period: "2007 — 2010",
           role: "Гүйцэтгэх захирал, инженер",
           org: "Megaspire ХХК, Interactive ХХК",
-          highlights: ["ERP, HRM, CMS шийдлүүд, тэр дундаа “Diamond” ERP-ийг хүлээлгэн өгсөн."],
+          highlights: ["ERP, HRM болон CMS төрлийн байгууллагын програм хангамжийн шийдлүүдийг боловсруулж, хөгжүүлэн нэвтрүүлсний дотор “Diamond” ERP систем багтана."],
         },
       ],
     },
     stack: {
-      heading: "Stack",
+      heading: "Технологийн ур чадвар",
       groups: [
         { name: "AI ба өгөгдөл", items: stack.ai },
         { name: "Frontend", items: stack.frontend },
@@ -288,7 +288,7 @@ const content: Record<Lang, SiteContent> = {
       ],
       now: {
         title: "Одоо юу хийж байна вэ?",
-        body: "AI SDLC-ийг группийн хэмжээнд нэвтрүүлж, байгууллагын өгөгдөл дээр ажиллах аюулгүй AI агентуудыг бүтээж байна.",
+        body: "Группийн хэмжээнд AI SDLC нэвтрүүлэлтийг удирдахын зэрэгцээ байгууллагын өгөгдөлтэй аюулгүй харилцах, эрхийн хяналттай AI агентуудыг хөгжүүлж байна.",
       },
     },
     credentials: {
@@ -307,27 +307,27 @@ const content: Record<Lang, SiteContent> = {
           ],
         },
         { name: "Хэл", items: ["Монгол (төрөлх)", "Англи (ажлын түвшин)", "Орос (дунд)", "Япон (анхан)"] },
-        { name: "Нийгэмлэг", items: ["Faith Tech Community — ментор, зохион байгуулагч (2023 — одоо)"] },
+        { name: "Нийгэмлэг", items: ["Faith Tech Community — хамтран үүсгэн байгуулагч, зохион байгуулагч (2023 — одоо)"] },
       ],
     },
     contactSection: {
       heading: "Холбогдох",
-      body: "Шинэ төсөл, AI нэвтрүүлэлт, техникийн зөвлөгөөний санал байвал бичээрэй — хариу өгөхдөө баяртай байх болно.",
+      body: "Веб платформ хөгжүүлэлт, AI нэвтрүүлэлт эсвэл техникийн зөвлөх үйлчилгээний чиглэлээр хамтран ажиллах санал байвал холбогдоорой.",
       emailLabel: "Имэйл",
       linkedinLabel: "LinkedIn",
       locationLabel: "Байршил",
       location: "Улаанбаатар, Монгол",
       cardTitle: "Хамтран ажиллая",
-      cardBody: "Төслийнхөө талаар хэдэн өгүүлбэрээр бичээд илгээгээрэй.",
+      cardBody: "Төслийн зорилго, хэрэгцээ болон хамтран ажиллах боломжийн талаар товч мэдээлэл илгээнэ үү.",
       cardCta: "Имэйл бичих",
     },
-    footer: { tagline: "Tech Lead — платформ бүтээж, AI-г ажилд оруулна.", rights: "Бүх эрх хуулиар хамгаалагдсан." },
+    footer: { tagline: "Tech Lead — өргөтгөх боломжтой платформ хөгжүүлж, хиймэл оюуныг бизнесийн бодит үр дүнд чиглүүлнэ.", rights: "Бүх эрх хуулиар хамгаалагдсан." },
   },
   en: {
     meta: {
       title: "Gandavaa Dugarsuren — Tech Lead, Full Stack Developer",
       description:
-        "Tech Lead with 10+ years of experience designing, building, and scaling web platforms end-to-end, and bringing AI into how teams build software.",
+        "Technology leader with 10+ years of experience architecting, delivering, and scaling business-critical web platforms. Focused on integrating AI into products and software delivery workflows to improve engineering quality, team productivity, and measurable business outcomes.",
     },
     nav: { about: "About", projects: "Projects", experience: "Experience", contact: "Contact" },
     a11y: {
@@ -339,48 +339,48 @@ const content: Record<Lang, SiteContent> = {
     },
     hero: {
       badge: "Tech Lead & Full Stack Developer",
-      titleLine1: "Building platforms,",
-      titleLine2: "putting AI to work.",
+      titleLine1: "Engineering scalable platforms,",
+      titleLine2: "turning AI into impact.",
       introBefore: "Hi, I'm ",
       name: "Gandavaa Dugarsuren",
       introAfter:
-        ". I've spent 10+ years designing, building, and scaling web systems — and now bring AI into how teams build software, safely and measurably.",
+        ". I bring 10+ years of experience across web architecture, software engineering, and platform delivery. Today, I help teams adopt AI across the software development lifecycle with the controls, evaluation, and measurable outcomes needed for production use.",
       cta: "View projects",
       secondaryCta: "Get in touch",
     },
     about: {
       heading: "About",
       body: [
-        "Full Stack Developer with 10+ years of experience building web systems on Node.js / NestJS, React, Vue.js, and AWS. Delivered enterprise-grade systems — from an aviation platform used daily by 500+ engineers to high-traffic food-ordering systems for KFC and Pizza Hut.",
-        "Now Tech Lead at Tavanbogd Nura LLC, rolling out AI agents and an AI-driven software development lifecycle across the group. Experienced team lead and mentor with a Master of Arts in Leadership (2024).",
+        "Full Stack Engineer with 10+ years of experience architecting and delivering web platforms using Node.js / NestJS, React, Vue.js, and AWS. My work spans enterprise systems, including an aviation operations platform used daily by 500+ professionals and high-volume ordering and delivery platforms for KFC and Pizza Hut.",
+        "Currently Tech Lead at Tavanbogd Nura LLC, leading the adoption of AI agents and an AI-enabled software development lifecycle across the group. I contribute to technical strategy, engineering practices, team leadership, and developer mentoring. Master of Arts in Leadership (2024).",
       ],
       servicesHeading: "How we can work together",
       services: [
         {
           title: "AI SDLC adoption",
           description:
-            "Evaluate AI coding agents and tooling, then roll out AI-assisted workflows across requirements, design, code, review, testing, and documentation — with team guidelines and guardrails.",
+            "Assess and select AI coding agents and engineering tools, then establish AI-assisted workflows across requirements, architecture, implementation, code review, testing, and documentation — supported by team standards, governance, and security controls.",
         },
         {
           title: "AI agents on your data",
           description:
-            "Least-privilege AI agents over enterprise data, with evals that check every number in an answer, on AWS Bedrock.",
+            "Build secure AI agents that interact with enterprise data under least-privilege access controls. Implement evaluation frameworks to validate factual accuracy, numerical consistency, and response safety using platforms such as AWS Bedrock.",
         },
         {
           title: "Full stack platforms",
           description:
-            "Multi-tenant SaaS, web and mobile, payment and POS integrations, CI/CD on AWS — from architecture to production.",
+            "Architect and deliver multi-tenant SaaS platforms, web and mobile applications, payment and POS integrations, and AWS-based CI/CD pipelines — from solution design through production deployment.",
         },
         {
           title: "Legacy modernization",
           description:
-            "Modernize live systems without downtime: Vue 2 → React + TypeScript, PHP → NestJS, monolith → services, with tests from day one.",
+            "Modernize business-critical systems while maintaining service continuity. Execute migrations such as Vue 2 to React + TypeScript, PHP to NestJS, and monolith-to-service architectures, introducing automated testing and quality controls throughout.",
         },
       ],
     },
     projects: {
       heading: "Featured work",
-      intro: "Projects where I took on complex problems and delivered measurable results.",
+      intro: "Selected projects demonstrating technical leadership, end-to-end delivery, and measurable business impact.",
       visit: "Visit site",
       items: [
         {
@@ -388,9 +388,9 @@ const content: Record<Lang, SiteContent> = {
           client: "Tavan Bogd Group",
           year: "2026",
           summary:
-            "Built solo with Claude Code: an HR dashboard and a Mongolian-language AI chat agent over Odoo 19 and attendance data, both fed from one secure, read-only data layer.",
+            "Independently architected and built an HR analytics dashboard and a Mongolian-language AI assistant integrated with Odoo 19 and attendance data, using Claude Code. Both applications consume data through a unified, secure, read-only access layer.",
           result:
-            "Bedrock Sonnet passed 15/15 on an eval that checks every number (a local model scored 9/15 and was rejected); security tests 15/15.",
+            "Achieved 15/15 on numerical-accuracy evaluations with Bedrock Sonnet; the local model scored 9/15 and did not meet the acceptance threshold. Passed all 15 security test cases.",
           tags: tags.hrAgent,
           href: null,
         },
@@ -399,8 +399,8 @@ const content: Record<Lang, SiteContent> = {
           client: "KFC Mongolia",
           year: "2026",
           summary:
-            "Audited an end-of-life, untested Vue 2 app and rebuilt it solo in React 18 + TypeScript, integrated with 7 backend services (~14,300 lines of TypeScript).",
-          result: "Eliminated lost orders on session expiry; introduced testing from zero (17 test files).",
+            "Conducted a technical audit of an end-of-life Vue 2 application with no automated tests, then independently rebuilt it using React 18 and TypeScript. The new application integrates with seven backend services and comprises approximately 14,300 lines of TypeScript.",
+          result: "Resolved order-loss scenarios triggered by session expiry and established the application’s automated testing foundation, delivering 17 test files.",
           tags: tags.kfcCallCenter,
           href: null,
         },
@@ -409,8 +409,8 @@ const content: Record<Lang, SiteContent> = {
           client: "TBG Tech LLC",
           year: "2025 – 2026",
           summary:
-            "Researched and evaluated AI coding agents and tooling, then implemented an AI-driven software development lifecycle.",
-          result: "AI-assisted workflows with team guidelines and guardrails at every stage, from requirements to documentation.",
+            "Evaluated AI coding agents and engineering tools, then designed and implemented an AI-enabled software development lifecycle across the engineering organization.",
+          result: "Established AI-assisted workflows, team guidelines, and governance controls across the delivery lifecycle — from requirements and design through implementation, testing, and documentation.",
           tags: tags.aiSdlc,
           href: null,
         },
@@ -419,8 +419,8 @@ const content: Record<Lang, SiteContent> = {
           client: "Tavan Bogd Group",
           year: "2022 – 2023",
           summary:
-            "Architected and led, from scratch, the group's internal helpdesk replacing requests scattered across email, chat, and phone: auto-routing, SLA alerts, Odoo SSO.",
-          result: "1,500–2,000 tickets a month; resolution time cut from ~3 h to ~1 h; ~160 person-hours saved monthly.",
+            "Architected and led the development of a centralized internal helpdesk, consolidating IT requests previously handled through email, chat, and phone. Delivered automated ticket routing, SLA notifications, and Odoo single sign-on integration.",
+          result: "Processes 1,500–2,000 tickets per month. Reduced average resolution time from approximately three hours to one hour, saving an estimated 160 person-hours each month.",
           tags: tags.itsupport,
           href: null,
         },
@@ -429,8 +429,8 @@ const content: Record<Lang, SiteContent> = {
           client: "KFC Mongolia",
           year: "4 years",
           summary:
-            "Lead developer in a 2-person backend team: split a monolith into 7 independent services (236 API endpoints) and consolidated 8 payment providers behind one service.",
-          result: "Orders sent to branch POS are never silently lost; payments are confirmed automatically within minutes.",
+            "Served as lead developer in a two-person backend team, decomposing a monolithic application into seven independent services comprising 236 API endpoints. Consolidated integrations with eight payment providers behind a unified payment service.",
+          result: "Improved order-delivery reliability by preventing silent order loss during transmission to branch POS systems, and implemented automated payment confirmation within minutes.",
           tags: tags.kfcBackend,
           href: null,
         },
@@ -438,29 +438,29 @@ const content: Record<Lang, SiteContent> = {
           title: "dagaldagch.mn",
           client: "FaithTech",
           year: "2025 –",
-          summary: "Architected and led development of a multi-tenant discipleship learning platform (web + mobile) for churches.",
+          summary: "Architected and led delivery of a multi-tenant discipleship and learning platform for churches, spanning web and mobile experiences.",
           result:
-            "Each organization's data reliably isolated; a schema-driven course engine where new lesson types ship without database changes.",
+            "Implemented tenant-level data isolation and a schema-driven learning engine that supports new lesson types without requiring database schema changes.",
           tags: tags.dagaldagch,
           href: "https://dagaldagch.mn",
         },
         {
           title: "vip76.mn",
           client: "vip76",
-          year: "2024 – 2026",
+          year: "2024 – 2025",
           summary:
-            "Migrated a live PHP platform to NestJS without taking it offline, then extended it into a multi-tenant platform where users run sites on their own domains.",
-          result: "Wrote ~75% of the code; fixed query performance and added a CDN image pipeline and bulk email.",
+            "Led the migration of a live PHP platform to NestJS with no planned service interruption, then evolved it into a multi-tenant publishing platform that enables each customer to operate websites on custom domains.",
+          result: "Contributed approximately 75% of the codebase, optimized database query performance, and implemented a CDN-backed image-processing pipeline and bulk email capability.",
           tags: tags.vip76,
           href: "https://vip76.mn",
         },
         {
           title: "ECNS",
           client: "Civil Aviation Authority of Mongolia",
-          year: "2010 – 2019",
+          year: "2014 – 2018",
           summary:
-            "A 12-module platform digitizing air-navigation operations: resource planning, equipment tracking, HR, training, reporting.",
-          result: "Used daily by 500+ engineers, technicians, and managers.",
+            "Designed and delivered a 12-module enterprise platform that digitized core air-navigation operations, including resource planning, equipment management, human resources, training, and reporting.",
+          result: "Adopted for daily operational use by more than 500 engineers, technicians, and managers.",
           tags: tags.ecns,
           href: null,
         },
@@ -474,8 +474,8 @@ const content: Record<Lang, SiteContent> = {
           role: "Tech Lead",
           org: "Tavanbogd Nura LLC",
           highlights: [
-            "Leading AI automation of group-level policy and organizational processes.",
-            "Turning ideas into working prototypes with AI coding agents, then hardening them for production through architecture review and tests.",
+            "Leading initiatives to apply AI-driven automation to group-wide policies and organizational workflows.",
+            "Accelerating solution validation through AI-assisted prototyping, then preparing solutions for production through architecture reviews, testing, and engineering quality controls.",
           ],
         },
         {
@@ -483,8 +483,8 @@ const content: Record<Lang, SiteContent> = {
           role: "Full Stack Developer",
           org: "Tavanbogd Nura LLC",
           highlights: [
-            "Built backend services and admin dashboards for KFC and Pizza Hut ordering, delivery, and call-center platforms on AWS.",
-            "Led code reviews, established coding standards, and mentored junior developers.",
+            "Developed backend services and administrative applications for KFC and Pizza Hut ordering, delivery, and call-center platforms, deployed on AWS.",
+            "Facilitated code reviews, established engineering standards, and provided technical guidance and mentorship to junior developers.",
           ],
         },
         {
@@ -492,20 +492,20 @@ const content: Record<Lang, SiteContent> = {
           role: "System Analyst",
           org: "Tavanbogd Solutions LLC",
           highlights: [
-            "Gathered requirements and designed workflows for e-commerce, order management, and call-center integrations across TBG Group subsidiaries.",
+            "Elicited and documented business requirements, and designed workflows and system integrations for e-commerce, order management, and call-center solutions across TBG Group subsidiaries.",
           ],
         },
         {
-          period: "2010 — 2019",
+          period: "2012 — 2019",
           role: "Technologies Engineer",
           org: "Civil Aviation Authority of Mongolia",
-          highlights: ["Built the ECNS platform and led the internal IT team: training, procurement, and technology upgrades."],
+          highlights: ["Delivered the ECNS platform and led the internal IT function, overseeing technical training, technology procurement, and infrastructure modernization."],
         },
         {
-          period: "2007 — 2010",
+          period: "2009 — 2011",
           role: "CEO & Software Engineer",
           org: "Megaspire LLC & Interactive LLC",
-          highlights: ["Delivered ERP, HRM, and CMS solutions, including the “Diamond” ERP."],
+          highlights: ["Led and delivered enterprise software solutions across ERP, HRM, and CMS domains, including the Diamond ERP platform."],
         },
       ],
     },
@@ -521,7 +521,7 @@ const content: Record<Lang, SiteContent> = {
       ],
       now: {
         title: "What I'm working on now",
-        body: "Rolling out an AI SDLC across the group and building secure AI agents that work on enterprise data.",
+        body: "Leading group-wide adoption of an AI-enabled software development lifecycle while engineering secure, access-controlled AI agents for enterprise data.",
       },
     },
     credentials: {
@@ -539,25 +539,24 @@ const content: Record<Lang, SiteContent> = {
           items: [
             "Young Engineer of the Year — Mongolian Youth Organization, 2016",
             "Best Engineer — Civil Aviation Authority, 2017",
-            "Best Employee — Civil Aviation Authority, 2015",
           ],
         },
-        { name: "Languages", items: ["Mongolian (native)", "English (working proficiency)", "Russian (intermediate)", "Japanese (basic)"] },
-        { name: "Community", items: ["Faith Tech Community — mentor and organizer (2023 — present)"] },
+        { name: "Languages", items: ["Mongolian (native)", "English (working proficiency)" ] },
+        { name: "Community", items: ["Faith Tech Community — Co-founder and Community Lead (2023 — present)"] },
       ],
     },
     contactSection: {
       heading: "Get in touch",
-      body: "Have a project, an AI adoption initiative, or need technical advice? Write to me — I'd be glad to hear from you.",
+      body: "For web platform development, AI adoption initiatives, or technical consulting, feel free to get in touch to discuss how we could work together.",
       emailLabel: "Email",
       linkedinLabel: "LinkedIn",
       locationLabel: "Location",
       location: "Ulaanbaatar, Mongolia",
       cardTitle: "Let's work together",
-      cardBody: "Send a few sentences about your project.",
+      cardBody: "Share a brief overview of your project goals, requirements, and potential collaboration.",
       cardCta: "Write an email",
     },
-    footer: { tagline: "Tech Lead — building platforms, putting AI to work.", rights: "All rights reserved." },
+    footer: { tagline: "Tech Lead — Engineering scalable platforms. Turning AI into measurable impact.", rights: "All rights reserved." },
   },
 };
 
