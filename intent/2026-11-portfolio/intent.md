@@ -1,5 +1,5 @@
 # Intent: Бизнесийн хамтрагчдад зориулсан portfolio вэб
-Author: Owner. Status: draft. Date: 2026-11-17
+Author: Owner. Status: accepted (PO, 2026-11-17). Date: 2026-11-17
 Source: idea
 
 ## Асуудал (Problem)
