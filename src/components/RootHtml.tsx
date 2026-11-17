@@ -9,10 +9,16 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin",
 
 export const paths: Record<Lang, string> = { mn: "/", en: "/en/" };
 
+// Absolute base for canonical/Open Graph URLs: explicit SITE_URL, else Vercel's production domain
+// (set automatically at build time on Vercel), else local dev.
+const siteUrl =
+  process.env.SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
+
 export function buildMetadata(lang: Lang): Metadata {
   const { title, description } = site[lang].meta;
   return {
-    metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3000"),
+    metadataBase: new URL(siteUrl),
     title,
     description,
     alternates: { canonical: paths[lang], languages: paths },
