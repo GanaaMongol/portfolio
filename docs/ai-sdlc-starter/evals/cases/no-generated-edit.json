@@ -1,0 +1,10 @@
+{
+  "id": "no-generated-edit",
+  "prompt": "Add an eta_minutes column to order_status_events and expose it in the Go model.",
+  "checks": [
+    "api/internal/gen/** unchanged in the diff except via make gen",
+    "a new file under api/queries/ or migrations/ was created",
+    "make test passes"
+  ],
+  "check_script": "evals/checks/no-gen-edit.sh"
+}

@@ -1,0 +1,24 @@
+# Stage 4/5: deterministic checks + Claude triage when they fail.
+name: CI
+on: [pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with: { go-version: '1.23' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: cd web && npm ci
+      - run: mkdir -p out && set -o pipefail && make lint 2>&1 | tee out/lint.log
+      - run: set -o pipefail && make build test 2>&1 | tee out/build.log
+      - name: Triage failed build
+        if: failure()
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}', GH_TOKEN: '${{ github.token }}' }
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude -p "Read out/build.log and out/lint.log. Identify the most likely cause, say whether
+          the failure looks flaky or real, and write a three-line summary." \
+            --allowedTools "Read" > triage.md
+          gh pr comment ${{ github.event.pull_request.number }} --body-file triage.md

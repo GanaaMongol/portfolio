@@ -1,0 +1,32 @@
+# Stage 5: AI review on every PR + @claude fix loop. Branch protection still requires a code owner.
+name: Claude review
+on:
+  pull_request:
+    types: [opened, synchronize]
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+permissions: { contents: write, pull-requests: write, issues: write, id-token: write }
+jobs:
+  review:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Review this PR following REVIEW.md. Find the linked intent folder from the PR
+            description or changed files and check the diff against its spec.md and plan.md.
+            Post findings as inline comments tagged with pass and severity, then a summary
+            with counts: Important=<n> Nit=<n>.
+  fix:
+    if: github.event_name != 'pull_request' && contains(github.event.comment.body, '@claude')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}

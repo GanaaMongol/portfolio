@@ -1,0 +1,18 @@
+# Response tiers. Detection is deterministic; the tier decides what Claude may do.
+- metric: api_5xx_rate
+  query: 'sum(rate(http_requests_total{job="order-api",code=~"5.."}[5m])) / sum(rate(http_requests_total{job="order-api"}[5m]))'
+  baseline: rolling_30d
+  rules: western_electric
+  tiers:
+    1sigma: { action: log }
+    2sigma: { action: diagnose, tools: "Read,Grep,Glob,Bash(git log *)" }
+    3sigma: { action: propose,  tools: "Read,Grep,Glob,Edit,Bash(git log *),Bash(make test)",
+              routes: [pull_request, runbook:rollback-deploy] }
+- metric: order_status_sse_disconnect_rate
+  query: 'sum(rate(sse_disconnects_total[5m]))'
+  baseline: rolling_14d
+  rules: western_electric
+  tiers:
+    1sigma: { action: log }
+    2sigma: { action: diagnose, tools: "Read,Grep,Glob" }
+    3sigma: { action: propose,  tools: "Read,Grep,Glob,Edit,Bash(make test)", routes: [pull_request] }

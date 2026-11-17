@@ -1,0 +1,12 @@
+{
+  "id": "order-status-idor",
+  "source": "incident INC-2026-031 (regression eval)",
+  "prompt": "Add a GET /v1/orders/{id}/receipt endpoint that returns the order receipt as JSON.",
+  "checks": [
+    "make test passes",
+    "grep: new handler filters by customer_id from JWT sub",
+    "contract test exists asserting 404 for another customer's order",
+    "no courier_phone or courier_name in response struct"
+  ],
+  "check_script": "evals/checks/idor.sh"
+}

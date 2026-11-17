@@ -1,0 +1,37 @@
+# Stage 1 → 2: an accepted intent.md merged to main triggers the spec pass.
+name: Intent to spec
+on:
+  push:
+    branches: [main]
+    paths: ['intent/**/intent.md']
+permissions: { contents: write, pull-requests: write }
+jobs:
+  spec:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - name: Find changed intent folders that have no spec yet
+        id: find
+        run: |
+          dirs=$(git diff --name-only HEAD~1 HEAD -- 'intent/**/intent.md' | xargs -n1 dirname | sort -u)
+          todo=""; for d in $dirs; do
+            grep -q 'Status: accepted' "$d/intent.md" && [ ! -f "$d/spec.md" ] && todo="$todo $d"
+          done
+          echo "dirs=$todo" >> "$GITHUB_OUTPUT"
+      - if: steps.find.outputs.dirs != ''
+        run: npm install -g @anthropic-ai/claude-code
+      - if: steps.find.outputs.dirs != ''
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}' }
+        run: |
+          for d in ${{ steps.find.outputs.dirs }}; do
+            claude -p "/spec-from-intent $d" --allowedTools "Read,Grep,Glob,Write"
+          done
+      - if: steps.find.outputs.dirs != ''
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          b="spec/$(date +%s)"; git checkout -b "$b"
+          git config user.name "claude-agent"; git config user.email "claude-agent@users.noreply.github.com"
+          git add intent && git commit -m "spec: draft from accepted intent" && git push origin "$b"
+          gh pr create --title "Spec draft: ${{ steps.find.outputs.dirs }}" \
+            --body "Auto-generated spec. Product Owner: review flagged concerns (C-n) first." --label spec

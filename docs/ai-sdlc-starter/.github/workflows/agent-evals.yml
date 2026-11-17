@@ -1,0 +1,18 @@
+# Stage 4: regression-test the agent configuration like code.
+name: Agent evals
+on:
+  pull_request:
+    paths: ['CLAUDE.md', 'REVIEW.md', '.claude/**']
+  schedule:
+    - cron: '0 18 * * *'   # 02:00 Ulaanbaatar (UTC+8)
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with: { go-version: '1.23' }
+      - run: npm install -g @anthropic-ai/claude-code
+      - name: Run eval suite
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}' }
+        run: ./evals/run.sh

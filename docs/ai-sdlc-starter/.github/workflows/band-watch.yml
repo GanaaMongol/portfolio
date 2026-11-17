@@ -1,0 +1,33 @@
+# Stage 6: deterministic detection every 15 min; Claude only when a band is breached.
+name: Band watch
+on:
+  schedule: [ { cron: '*/15 * * * *' } ]
+  workflow_dispatch:
+permissions: { contents: write, pull-requests: write }
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pyyaml requests
+      - name: Detect (no model involved)
+        id: detect
+        env: { PROM_URL: '${{ secrets.PROM_URL }}' }
+        run: python monitoring/detect.py monitoring/bands.yaml >> "$GITHUB_OUTPUT"
+      - name: Diagnose (2σ, read-only)
+        if: steps.detect.outputs.tier == 'diagnose' || steps.detect.outputs.tier == 'propose'
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}' }
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude -p "Metric ${{ steps.detect.outputs.metric }} breached ${{ steps.detect.outputs.sigma }}σ.
+          Evidence: ${{ steps.detect.outputs.evidence }}. Diagnose the likely cause from recent
+          commits and logs. Use the intent-writer skill to write intent/$(date +%Y-%m)-alert-${{ steps.detect.outputs.metric }}/intent.md
+          with Source: alert." --allowedTools "${{ steps.detect.outputs.tools }}"
+      - name: Open PR for triage
+        if: steps.detect.outputs.tier != 'log' && steps.detect.outputs.tier != ''
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          b="alert/$(date +%s)"; git checkout -b "$b"
+          git config user.name "claude-agent"; git config user.email "claude-agent@users.noreply.github.com"
+          git add intent && git commit -m "intent: alert ${{ steps.detect.outputs.metric }}" && git push origin "$b"
+          gh pr create --title "Alert intent: ${{ steps.detect.outputs.metric }}" --body "On-call: fix now / schedule / dismiss" --label triage
