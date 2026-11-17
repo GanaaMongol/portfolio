@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 import { site, type Lang } from "@/content/site";
 import "@/app/globals.css";
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin", "cyrillic"] });
+const geist = Geist({ variable: "--font-geist", subsets: ["latin", "cyrillic", "cyrillic-ext"] });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin", "cyrillic", "cyrillic-ext"] });
 
 export const paths: Record<Lang, string> = { mn: "/", en: "/en/" };
 
@@ -21,8 +22,12 @@ export function buildMetadata(lang: Lang): Metadata {
 
 export function RootHtml({ lang, children }: { lang: Lang; children: ReactNode }) {
   return (
-    <html lang={lang} className={`${inter.variable} antialiased`}>
-      <body className="min-h-screen font-sans">{children}</body>
+    <html lang={lang} className={`${geist.variable} ${geistMono.variable}`} suppressHydrationWarning>
+      <body className="min-h-screen font-sans">
+        {/* Runs before any content is parsed: marks JS as available so the hero entrance has no flash (globals.css). */}
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+        {children}
+      </body>
     </html>
   );
 }

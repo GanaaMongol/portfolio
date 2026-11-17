@@ -15,8 +15,12 @@ Process follows docs/ai-sdlc-starter (AI-native SDLC).
 ## Conventions
 - All user-facing text lives in src/content/site.ts — no hard-coded strings in components.
 - mn and en must have the same structure (enforced by src/content/site.test.ts).
-- Colours only via tokens in src/app/globals.css (bg-surface, text-muted, text-accent, …) — no raw hex in components.
-- Server Components only; this site needs no client JS. No dynamic server functions (static export).
+- Colours only via tokens in src/app/globals.css (bg-background, bg-secondary, bg-primary, text-muted, border-border,
+  shadow-card, …) — no raw hex in components. Light only, monochrome zinc (see .claude/skills/ui-standards).
+- Server Components by default. Client JS only for motion: src/components/HeroRain.tsx (Glyph Rain) and
+  src/components/Reveal.tsx (GSAP). No dynamic server functions (static export).
+- src/vendor/canvas-ui/ is vendored third-party code (MIT + Commons Clause) — do not edit; re-vendor to update.
+- UI work: follow ui-standards first (the brief), then make-interfaces-feel-better, gsap-*, impeccable craft-floor.
 - Mobile-first; check 360px and 1280px.
 
 ## SDLC artifacts
