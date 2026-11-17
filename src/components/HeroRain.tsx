@@ -14,9 +14,9 @@ export function HeroRain() {
       <GlyphRain
         className="h-full w-full"
         cell={16}
-        // Green rain, library-default Japanese katakana glyphs (spec C-8 change, 2026-11-17).
-        color={[0.55, 0.85, 0.62]}
-        headColor={[0.09, 0.64, 0.29]}
+        // Blue rain, library-default Japanese katakana glyphs (spec C-8 change, 2026-11-17).
+        color={[0.55, 0.68, 1]}
+        headColor={[0.17, 0.42, 1]}
         speed={0.12}
         density={0.12}
         trail={0.8}

@@ -19,7 +19,7 @@ never its text, images, logo, or other assets.
 - Tokens only, defined in src/app/globals.css — no raw hex in components.
 - background #ffffff, foreground #09090b, muted #71717a, border #e4e4e7, secondary #f4f4f5.
 - No accent colour: the black pill button is the only emphasis. Alternate sections use secondary/30 + subtle grain.
-- Single exception (owner, 2026-11-17): the hero Glyph Rain is green with Japanese katakana glyphs. Green stays
+- Single exception (owner, 2026-11-17): the hero Glyph Rain is blue with Japanese katakana glyphs. Blue stays
   confined to that decorative layer — never use it for text, buttons, or other UI.
 
 ## Typography
